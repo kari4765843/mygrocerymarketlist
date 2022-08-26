@@ -1,0 +1,86 @@
+:root {
+--background:	#F08080;
+--foreground:	#C71585;
+--comment:	#000000;
+--accent:	#800000;
+--Palevioledred:	#db7093;
+--palgreen: 	#98fbfb98;
+--lightyellow: 	#ffffe0;
+--lavenderblush: 	#fff0f5;
+--lavender:	#e6e6fa;
+--plum: 	#C71585;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--foreground);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+.title {
+    margin: 0.5em;
+    font-size: 5em;
+    font-weight: lighter;
+    letter-spacing: 0.05;
+    color: var(--accent);
+}
+
+.newGroceryForm {
+   display:flex; 
+}
+
+#newGrocery{
+    background-color:#F0F8FF ;
+    color: var(--comment);
+    padding: 0.5em;
+    width: 20em;
+    font-size: 1.5em;
+    border-radius:0.25em 0 0 0.25em;
+}
+#addBtn {
+    background-color: var(--comment);
+    color: var(--background);
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.25em;
+    border-radius:0 0.25rem 0.25em 0;
+}
+
+#addBtn:hover {
+    background-color: var(--plum);
+
+}
+
+#grocerymarketlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    margin-top: 2em;
+    border-radius: 0.5em;
+    background-color: var(--comment);
+}
+
+.grocerymarketItem{
+    background-color:#800000 ;
+    color: var(--background);
+    margin: 0.5em;         
+    width: 24em;           
+    padding: 0.5em;        
+    border-radius: 0.25em;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.grocerymarketItem:hover{
+  background-color: var(--plum);
+  color: var(--accent);
+  font-weight: bold;
+}
